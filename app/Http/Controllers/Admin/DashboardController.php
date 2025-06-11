@@ -12,6 +12,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        // return view('admin.dashboard');
         return view('admin.dashboard', [
             'total_users' => User::count(),
             'total_products' => Product::count(),

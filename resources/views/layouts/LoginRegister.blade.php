@@ -5,7 +5,6 @@
     <title>Admin Panel — @yield('title', 'Dashboard')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    {{-- @vite('resources/css/app.css') --}}
 </head>
 <body class="bg-gray-100 text-gray-900">
     <div class="flex min-h-screen">
@@ -39,7 +38,6 @@
                 <h1 class="text-lg font-semibold">@yield('title', 'Admin Dashboard')</h1>
                 <div class="text-sm text-gray-500">Admin: {{ Auth::user()->name ?? 'Administrator' }}</div>
             </header>
-            @include('layouts.admin.navbar')
 
             <!-- Main Content -->
             <main class="p-6 flex-1">
@@ -47,7 +45,6 @@
             </main>
 
             <!-- Footer -->
-            @include('layouts.admin.footer')
             <footer class="text-center py-4 bg-white border-t">
                 <p class="text-sm text-gray-500">© {{ date('Y') }} Aplikasi Penjualan Sederhana — Admin Panel</p>
             </footer>

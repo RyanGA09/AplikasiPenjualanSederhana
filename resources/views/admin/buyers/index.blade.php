@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 @section('title', 'Data Pembeli')
 @section('content')
+<a href="{{ route('admin.export.buyers') }}" class="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 mb-4">Export to Excel</a>
 <table class="w-full bg-white shadow rounded overflow-hidden">
     <thead class="bg-gray-100">
         <tr>

@@ -17,6 +17,14 @@ class Users extends Authenticatable {
         return $this->role === 'admin';
     }
 
+    public function isSeller() {
+        return $this->role === 'seller';
+    }
+
+    public function isBuyer() {
+        return $this->role === 'buyer';
+    }
+
     public function purchases() {
         return $this->hasMany(Purchase::class, 'buyer_id');
     }
