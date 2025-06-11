@@ -1,0 +1,42 @@
+# Log & system files
+*.log
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.backup
+.env.production
+auth.json
+
+# PHP / Laravel related
+.phpactor.json
+.phpunit.result.cache
+.phpunit.cache
+Homestead.json
+Homestead.yaml
+
+# IDE & Editor folders
+/.fleet
+/.idea
+/.vscode
+/.nova
+/.zed
+
+# Node & build
+/node_modules
+/public/build
+/public/hot
+/public/storage
+
+# Storage
+/storage/*.key
+/storage/pail
+
+# Vendor
+/vendor
+
+# Other
+.codegpt
